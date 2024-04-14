@@ -22,7 +22,7 @@
             <AnchorPane prefHeight="330.0" prefWidth="160.0" BorderPane.alignment="CENTER" />
          </left>
          <bottom>
-            <AnchorPane prefHeight="330.0" prefWidth="166.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="431.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <children>
                   <VBox alignment="TOP_CENTER" layoutX="167.0" layoutY="-8.0" prefHeight="318.0" prefWidth="266.0" style="-fx-background-color: grey;" AnchorPane.topAnchor="-8.0">
                      <children>
@@ -37,6 +37,15 @@
                               <Font size="15.0" />
                            </font>
                         </Text>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Bio:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                            <children>
                               <Label text="Job Title:">
@@ -80,7 +89,7 @@
                <children>
                   <AnchorPane prefHeight="75.0" prefWidth="600.0">
                      <children>
-                        <Button layoutX="253.0" layoutY="37.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" text="Jobs" />
+                        <Button layoutX="253.0" layoutY="24.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" text="Jobs" />
                         <Button layoutX="491.0" layoutY="11.0" mnemonicParsing="false" text="Edit Profile" />
                      </children>
                   </AnchorPane>
