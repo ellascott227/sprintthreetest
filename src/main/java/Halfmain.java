@@ -1,22 +1,28 @@
+import models.MainModel;
+import models.ViewTransitionModel;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.BorderPane;
+import views.MainController;
 import javafx.stage.Stage;
 
 public class Halfmain extends Application{
 
 	@Override
 	public void start(Stage stage) throws Exception{
-		
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(Halfmain.class.getResource("views/mainview.fxml"));
+		loader.setLocation(Halfmain.class.getResource("views/tabsview.fxml"));
 		
-		Pane view = loader.load();
+		BorderPane view = loader.load();
+		MainController cont = loader.getController();
+		ViewTransitionModel vm = new ViewTransitionModel(view);
+		cont.setModel(vm);
+		
 		Scene s = new Scene(view);
 		stage.setScene(s);
 		stage.show();
-		
+		vm.showJobs();
 	}
 	
 	public static void main(String[] args) {

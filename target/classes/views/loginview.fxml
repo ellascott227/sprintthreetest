@@ -7,27 +7,26 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-
 <Pane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox prefHeight="200.0" prefWidth="100.0">
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
          <children>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label text="Username:" />
-                  <TextField promptText="username" />
+                  <Label minWidth="70.0" prefWidth="60.0" text="Username:" />
+                  <TextField fx:id="usernameBox" minWidth="100.0" promptText="username" />
                </children>
             </HBox>
-            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label text="Password" />
-                  <TextField promptText="password" />
+                  <Label minWidth="70.0" text="Password:" />
+                  <TextField fx:id="passwordBox" promptText="password" />
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" text="Login" />
-                  <Button mnemonicParsing="false" text="Create Profile" />
+                  <Button fx:id="loginButton" mnemonicParsing="false" text="Login" />
+                  <Button fx:id="newProfileButton" mnemonicParsing="false" text="Create Profile" />
                </children>
             </HBox>
          </children>
